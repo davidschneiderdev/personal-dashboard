@@ -1,0 +1,14 @@
+.tabs {
+    display: flex;
+
+    background-color: rgba(white, 0.25);
+    border-radius: 12px;
+    gap: 14px;
+
+    padding: 10px;
+}
+
+.tab-tile {
+    padding: 18px;
+    background: rgba(black, 0.1);
+}
