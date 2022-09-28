@@ -6,17 +6,37 @@
     gap: 14px;
 
     backdrop-filter: blur(3px);
-
     padding: 10px;
+    margin: 12px;
+    margin-top: 50px;
+}
+
+.tab {
+    position: relative;
+    z-index: 1;
 }
 
 .tab-tile {
     display: flex;
     padding: 18px;
-    background: rgba(black, 0.1);
+
     cursor: pointer;
 
     i {
         color: #222;
     }
+}
+
+.tab-tile::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(violet, 0.5);
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(45deg, #f8b5a5, #e2d2fd);
+    border-radius: 10px;
+    z-index: -1;
 }
