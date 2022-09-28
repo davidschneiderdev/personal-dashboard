@@ -29,6 +29,8 @@
     }
 }
 
+// STYLES FOR THE TAB TILE BACKGROUND SHAPE
+
 .tab-tile::before {
     content: '';
     position: absolute;
@@ -62,4 +64,14 @@
     transform: scale(1.1);
     opacity: 1;
 }
+
+.tab.selected .tab-tile::before {
+    opacity: 1;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+// END OF TAB TILE BACKGROUND 'SHAPE' STYLES
+
+
 
