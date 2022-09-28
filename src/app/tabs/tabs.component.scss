@@ -9,6 +9,12 @@
 }
 
 .tab-tile {
+    display: flex;
     padding: 18px;
     background: rgba(black, 0.1);
+    cursor: pointer;
+
+    i {
+        color: #222;
+    }
 }
