@@ -36,7 +36,18 @@
     top: 0;
     left: 0;
 
-    background: linear-gradient(45deg, #f8b5a5, #e2d2fd);
     border-radius: 10px;
     z-index: -1;
+}
+
+.bookmarks-tab .tab-tile::before {
+    background: linear-gradient(45deg, #f8b5a5, #e2d2fd);
+}
+
+.todos-tab .tab-tile::before {
+    background: linear-gradient(45deg, #a2ffff, #ffbdde); 
+}
+
+.notes-tab .tab-tile::before {
+    background: linear-gradient(45deg, #d2cdff, #5fffbc); 
 }
