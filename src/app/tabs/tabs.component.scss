@@ -14,6 +14,8 @@
 .tab {
     position: relative;
     z-index: 1;
+
+    text-decoration: none;
 }
 
 .tab-tile {
@@ -38,6 +40,10 @@
 
     border-radius: 10px;
     z-index: -1;
+
+    opacity: 0.9;
+
+    transition: all 0.2s;
 }
 
 .bookmarks-tab .tab-tile::before {
@@ -51,3 +57,9 @@
 .notes-tab .tab-tile::before {
     background: linear-gradient(45deg, #d2cdff, #5fffbc); 
 }
+
+.tab-tile:hover::before {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
