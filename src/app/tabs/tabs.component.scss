@@ -88,3 +88,39 @@
 
 
 
+// STYLES FOR THE UNDERLINE EFFECT
+
+.tab::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+
+    height: 3px;
+    width: 50%;
+
+    margin: auto;
+
+    background-color: rgba(white, 0.85);
+
+    transition: all 0.2s;
+
+
+    // hide by default
+
+    opacity: 0;
+
+    transform: scaleX(0);
+}
+
+.tab.selected::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transition-delay: 0.28s;
+}
+
+
+
+
+
